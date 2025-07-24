@@ -21,8 +21,8 @@ jobs:
         run: chmod +x function.sh while.sh
 
       - name: Run function.sh
-        run: ./function.sh
+        run: ./ci_cd/function.sh
 
       - name: Run test.sh
-        run: ./while.sh
+        run: ./ci_cd/while.sh
 
