@@ -1,0 +1,28 @@
+name: Shell Script CI
+
+on:
+  push:
+    branches:
+      - main
+      - ci_cd
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-scripts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Make shell scripts executable
+        run: chmod +x function.sh test.sh
+
+      - name: Run function.sh
+        run: ./function.sh
+
+      - name: Run test.sh
+        run: ./while.sh
+
