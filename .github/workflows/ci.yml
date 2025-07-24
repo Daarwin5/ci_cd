@@ -18,11 +18,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Make shell scripts executable
-        run: chmod +x ci_cd/function.sh ci_cd/while.sh
+        run: chmod +x function.sh while.sh
 
       - name: Run function.sh
-        run: ./ci_cd/function.sh
+        run: ./function.sh
 
       - name: Run while.sh
-        run: ./ci_cd/while.sh
+        run: ./while.sh
 
