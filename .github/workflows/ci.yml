@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Make shell scripts executable
-        run: chmod +x function.sh test.sh
+        run: chmod +x function.sh while.sh
 
       - name: Run function.sh
         run: ./function.sh
